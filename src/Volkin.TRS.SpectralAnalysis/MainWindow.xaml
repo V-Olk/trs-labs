@@ -1,0 +1,30 @@
+﻿<Window x:Class="Volkin.TRS.SpectralAnalysis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        xmlns:spectralAnalysis="clr-namespace:Volkin.TRS.SpectralAnalysis"
+        mc:Ignorable="d"
+        Title="Модулированные радиотехнические сигналы" Height="600" Width="1000">
+    <Window.DataContext>
+        <spectralAnalysis:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <oxy:PlotView Model="{Binding SignalModel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="0"/>
+        <oxy:PlotView Model="{Binding SignalWithNoiseModel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="0" Grid.Row="1"/>
+        <oxy:PlotView Model="{Binding SpectrumModel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="0"/>
+        <oxy:PlotView Model="{Binding SignalWithNoiseSpectrumModel, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1"/>
+
+    </Grid>
+</Window>

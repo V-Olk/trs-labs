@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{826866AE-7E13-4F23-BB84-B8F51BDC8D40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volkin.TRS.ModulatedRadioSignals", "Volkin.TRS.ModulatedRadioSignals", "{12382DA5-2729-4AB2-83B5-183F0D68F5D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volkin.TRS.ModulatedRadioSignals", "src\Volkin.TRS.ModulatedRadioSignals\Volkin.TRS.ModulatedRadioSignals.csproj", "{A8E36F1E-98B4-437B-9E16-406BA93F1BD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volkin.TRS.SpectralAnalysis", "Volkin.TRS.SpectralAnalysis", "{3B256CA1-2B6D-45D2-B82C-0795202DC2B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volkin.TRS.SpectralAnalysis", "src\Volkin.TRS.SpectralAnalysis\Volkin.TRS.SpectralAnalysis.csproj", "{FBA7240B-548C-44C5-BB3E-F9335F467EC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8E36F1E-98B4-437B-9E16-406BA93F1BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E36F1E-98B4-437B-9E16-406BA93F1BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E36F1E-98B4-437B-9E16-406BA93F1BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E36F1E-98B4-437B-9E16-406BA93F1BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA7240B-548C-44C5-BB3E-F9335F467EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA7240B-548C-44C5-BB3E-F9335F467EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA7240B-548C-44C5-BB3E-F9335F467EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA7240B-548C-44C5-BB3E-F9335F467EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12382DA5-2729-4AB2-83B5-183F0D68F5D6} = {826866AE-7E13-4F23-BB84-B8F51BDC8D40}
+		{A8E36F1E-98B4-437B-9E16-406BA93F1BD3} = {12382DA5-2729-4AB2-83B5-183F0D68F5D6}
+		{3B256CA1-2B6D-45D2-B82C-0795202DC2B7} = {826866AE-7E13-4F23-BB84-B8F51BDC8D40}
+		{FBA7240B-548C-44C5-BB3E-F9335F467EC7} = {3B256CA1-2B6D-45D2-B82C-0795202DC2B7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D86F30CB-8BD6-4D63-A39F-DB4650C038C4}
+	EndGlobalSection
+EndGlobal
